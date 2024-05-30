@@ -242,7 +242,7 @@ class TypingWidget extends StatelessWidget {
     } else if (author.length == 1) {
       return '${author.first.firstName} ${InheritedL10n.of(context).l10n.isTyping}';
     } else if (author.length == 2) {
-      return '${author.first.firstName} ${InheritedL10n.of(context).l10n.and} ${author.last.firstName}';
+      return '${author.first.firstName} ${InheritedL10n.of(context).l10n.and} ${author[1].firstName}';
     } else {
       return '${author.first.firstName} ${InheritedL10n.of(context).l10n.and} ${author.length - 1} ${InheritedL10n.of(context).l10n.others}';
     }
